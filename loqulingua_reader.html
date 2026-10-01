@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Loqulingua Reader</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #0f172a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        h1 {
+            color: #38bdf8;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 12px;
+        }
+        h2 {
+            color: #e8b02e;
+            margin-top: 32px;
+        }
+        h3 {
+            color: #7dd3fc;
+            margin-top: 20px;
+        }
+        p, li {
+            color: #cbd5e1;
+        }
+        a {
+            color: #38bdf8;
+        }
+        .app-info {
+            background-color: #1e293b;
+            border-left: 4px solid #38bdf8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+        .highlight-box {
+            background-color: #064e3b;
+            border-left: 4px solid #10b981;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 6px;
+        }
+        .highlight-box p {
+            color: #d1fae5;
+            margin: 0;
+        }
+        .last-updated {
+            font-size: 0.9em;
+            color: #94a3b8;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #64748b;
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Privacy Policy for Loqulingua Reader</h1>
+    <p class="last-updated">Last updated: October 1, 2026</p>
+
+    <div class="app-info">
+        <p><strong>App Title:</strong> Loqulingua Reader (AI Context Tutor)</p>
+        <p><strong>Application ID (Package Name):</strong> com.loqulingua.reader</p>
+        <p><strong>Developer / Entity Name:</strong> Gokmen Girgin</p>
+        <p><strong>Contact Email:</strong> support@loqulingua.com</p>
+    </div>
+
+    <div class="highlight-box">
+        <p>🔒 <strong>Privacy Summary:</strong> Loqulingua Reader is built with an offline-first, privacy-first architecture. We do not require accounts, do not collect personal identifiers, and do not track or sell your reading activity.</p>
+    </div>
+
+    <p>This Privacy Policy describes the policies and procedures of <strong>Gokmen Girgin</strong> ("Developer", "we", "us", or "our") regarding the collection, use, and disclosure of information when you use <strong>Loqulingua Reader</strong> ("the Application" or "the Service").</p>
+
+    <h2>1. 100% Privacy-First & On-Device Architecture</h2>
+    <ul>
+        <li><strong>Local Storage:</strong> Your imported books (EPUB, PDF), custom vocabulary lists, bookmarks, highlights, reading progress, and SuperMemo SM-2 spaced repetition review history are stored <strong>strictly locally on your device</strong> in an offline SQLite database.</li>
+        <li><strong>No Account Required:</strong> You do not need to register, create a profile, or provide an email address to use any core feature of the application.</li>
+        <li><strong>No Analytics / No Tracking:</strong> We do not track what you read, what words you inspect, or how frequently you use the app. We do not use third-party behavioral analytics SDKs (such as Firebase Analytics or Mixpanel).</li>
+    </ul>
+
+    <h2>2. Artificial Intelligence (AI) and Translation Processing</h2>
+
+    <h3>A. On-Device AI (Gemma via LiteRT-LM / MediaPipe)</h3>
+    <p>When you select the On-Device AI engine, all natural language processing, contextual grammar breakdown, and quiz generation are executed <strong>100% locally on your device's processor (CPU/GPU/NPU)</strong>. Zero sentence text, word lookups, or user data ever leave your device.</p>
+
+    <h3>B. On-Device Translation (Google ML Kit)</h3>
+    <p>When you use offline translation, sentence translation models (~30 MB per language) are downloaded directly to your device via Google ML Kit. Once downloaded, translation occurs locally on-device without internet access, ensuring complete privacy.</p>
+
+    <h3>C. Cloud AI Providers (Gemini, OpenAI, Claude) — Optional & User-Controlled</h3>
+    <p>If you optionally choose to connect your own API keys for Google Gemini, OpenAI, or Anthropic Claude:</p>
+    <ul>
+        <li>Your API keys are stored solely on your device and are never transmitted to our servers.</li>
+        <li>Only the specific word and contextual sentence snippet you choose to inspect is sent directly to the official API endpoint of your selected provider.</li>
+        <li>Please consult the respective privacy policies of these providers (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AI</a>, <a href="https://openai.com/privacy" target="_blank" rel="noopener">OpenAI</a>, <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic</a>) for their specific data handling terms.</li>
+    </ul>
+
+    <h2>3. Network Usage and Permissions</h2>
+    <p>The Application requests network access strictly to provide the following user-initiated features:</p>
+    <ol>
+        <li><strong>Project Gutenberg Catalog:</strong> Browsing and downloading public domain classics from the Project Gutenberg library (gutendex.com).</li>
+        <li><strong>Public RSS Feeds:</strong> Fetching articles and news headlines from reputable public news sources (e.g., Tagesschau, Deutsche Welle, BBC) that you choose to follow.</li>
+        <li><strong>Language Model Downloads:</strong> Downloading open-weight language model weights or Google ML Kit translation packs upon your explicit confirmation.</li>
+        <li><strong>Cloud AI Queries:</strong> Communicating with external AI providers only if you have configured your own personal API key.</li>
+    </ol>
+
+    <h2>4. Microphone & Speech Permissions</h2>
+    <p>The Application may request microphone access (<code>android.permission.RECORD_AUDIO</code>) solely for the <strong>"Verify by Speaking" (Speech-to-Text)</strong> feature. When you tap the microphone button on a vocabulary card, your voice is processed on-device using the operating system's native speech recognition engine to compare your pronunciation against the target word. Audio recordings are <strong>never stored, uploaded, or transmitted</strong> to any server.</p>
+
+    <h2>5. In-App Purchases & Monetization</h2>
+    <ul>
+        <li>Loqulingua Reader is <strong>ad-free</strong> and does not integrate third-party advertising SDKs.</li>
+        <li>Optional voluntary supporter donations ("Buy Me a Coffee") are processed securely by <strong>Google Play In-App Billing</strong> (or Apple StoreKit on iOS). We do not collect, process, or store your credit card or financial details. Payment transactions are governed entirely by Google's Payment Terms of Service.</li>
+    </ul>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Because all data is stored locally on your device:</p>
+    <ul>
+        <li>You retain 100% control over your data.</li>
+        <li>You can delete individual books, highlights, or saved vocabulary entries at any time directly within the application.</li>
+        <li>Uninstalling the application or clearing the application's storage in your device settings permanently removes all locally saved data.</li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>Loqulingua Reader does not knowingly collect or solicit any personally identifiable information from children under the age of 13. The application is a general-audience educational reading tool suitable for all ages.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, feedback, or concerns regarding this Privacy Policy, please contact us at:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:support@loqulingua.com">support@loqulingua.com</a></li>
+        <li><strong>Developer:</strong> Gokmen Girgin</li>
+        <li><strong>Website:</strong> <a href="https://gokmengirgin-maker.github.io/privacy_policy/">Gokmen Girgin Privacy Policy Center</a></li>
+    </ul>
+
+    <footer>
+        &copy; 2026 Gokmen Girgin. All rights reserved. &bull; <a href="index.html">All Privacy Policies</a>
+    </footer>
+
+</body>
+</html>
